@@ -8,11 +8,11 @@
 
 body {
   font-family: "Montserrat", sans;
-  height: 100vh;
+  /* height: 100vh; */
   background: #f4ab37;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 .container {
@@ -34,6 +34,7 @@ body {
 @media (max-width: 800px) {
   .cabecalho .container{
     justify-content: center;
+    text-align: center;
   }
 }
 
@@ -49,15 +50,16 @@ body {
 
 /* Principal */
 .principal {
-  background: url("../images/bg-desktop.jpg") center no-repeat;
+  background: url("../images/bg-desktop.jpg") no-repeat;
+  background-position: center top;
   background-size: cover;
-  /* padding: 120px 0; */
-  flex: 2;
+  background-attachment: fixed;
+  /* flex: 2; */
 }
 
 .principal .container {
   /* background: #666666; */
-  padding: 120px 0;
+  padding: 360px 0;
 }
 
 /* Footer */
