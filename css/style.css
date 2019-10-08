@@ -32,13 +32,13 @@ body {
 }
 
 @media (max-width: 800px) {
-  .cabecalho .container{
+  .cabecalho .container {
     justify-content: center;
     text-align: center;
   }
 }
 
-.menu-logo{
+.menu-logo {
   margin: 0 15px;
 }
 
@@ -58,8 +58,20 @@ body {
 }
 
 .principal .container {
-  /* background: #666666; */
   padding: 360px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .principal {
+    background: url("../images/bg-mobile.jpg") no-repeat;
+    background-position: center top;
+    background-size: cover;
+    /* background-attachment: fixed; */
+  }
+
+  .principal .container {
+    padding: 180px 0;
+  }
 }
 
 /* Footer */
@@ -68,7 +80,6 @@ footer {
   padding: 20px 10px;
   display: flex;
   justify-content: center;
-
 }
 
 footer p {
